@@ -14,6 +14,10 @@
 		187B1AD42394533A005B2DD3 /* Clocks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187B1AD22394533A005B2DD3 /* Clocks.xcdatamodeld */; };
 		187B1AD62394533D005B2DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187B1AD52394533D005B2DD3 /* Assets.xcassets */; };
 		187B1AD92394533D005B2DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187B1AD72394533D005B2DD3 /* LaunchScreen.storyboard */; };
+		187B1AE123945492005B2DD3 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187B1AE023945492005B2DD3 /* Clock.swift */; };
+		18F446522394C7EE00509272 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F446512394C7EE00509272 /* ClockView.swift */; };
+		18F446552394CA5B00509272 /* ClockDailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F446542394CA5B00509272 /* ClockDailView.xib */; };
+		18F446572394CB1400509272 /* ClockDailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F446562394CB1400509272 /* ClockDailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		187B1AD52394533D005B2DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187B1AD82394533D005B2DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187B1ADA2394533D005B2DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187B1AE023945492005B2DD3 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		18F446512394C7EE00509272 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = SOURCE_ROOT; };
+		18F446542394CA5B00509272 /* ClockDailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockDailView.xib; sourceTree = "<group>"; };
+		18F446562394CB1400509272 /* ClockDailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockDailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +70,24 @@
 				187B1ACB2394533A005B2DD3 /* SceneDelegate.swift */,
 				187B1ACD2394533A005B2DD3 /* ViewController.swift */,
 				187B1ACF2394533A005B2DD3 /* Main.storyboard */,
+				18F446542394CA5B00509272 /* ClockDailView.xib */,
+				18F446562394CB1400509272 /* ClockDailView.swift */,
+				18F446532394C8AA00509272 /* Temp */,
+				18F446512394C7EE00509272 /* ClockView.swift */,
 				187B1AD52394533D005B2DD3 /* Assets.xcassets */,
 				187B1AD72394533D005B2DD3 /* LaunchScreen.storyboard */,
 				187B1ADA2394533D005B2DD3 /* Info.plist */,
 				187B1AD22394533A005B2DD3 /* Clocks.xcdatamodeld */,
 			);
 			path = Clocks;
+			sourceTree = "<group>";
+		};
+		18F446532394C8AA00509272 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				187B1AE023945492005B2DD3 /* Clock.swift */,
+			);
+			path = Temp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F446552394CA5B00509272 /* ClockDailView.xib in Resources */,
 				187B1AD92394533D005B2DD3 /* LaunchScreen.storyboard in Resources */,
 				187B1AD62394533D005B2DD3 /* Assets.xcassets in Resources */,
 				187B1AD12394533A005B2DD3 /* Main.storyboard in Resources */,
@@ -142,9 +163,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				187B1ACE2394533A005B2DD3 /* ViewController.swift in Sources */,
+				18F446522394C7EE00509272 /* ClockView.swift in Sources */,
+				18F446572394CB1400509272 /* ClockDailView.swift in Sources */,
 				187B1ACA2394533A005B2DD3 /* AppDelegate.swift in Sources */,
 				187B1AD42394533A005B2DD3 /* Clocks.xcdatamodeld in Sources */,
 				187B1ACC2394533A005B2DD3 /* SceneDelegate.swift in Sources */,
+				187B1AE123945492005B2DD3 /* Clock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
